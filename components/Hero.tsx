@@ -7,7 +7,8 @@ function Hero() {
         <video 
           autoPlay 
           muted 
-          loop 
+          loop
+          playsInline
           className="absolute inset-0 h-full w-full object-cover z-0"
           src="https://assets.website-files.com/64e0bdf99003f08ece9cb8ec/64e4086d6d1aa9ba1c448369_wedding-transcode.webm"
         />
