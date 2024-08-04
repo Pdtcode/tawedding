@@ -126,19 +126,18 @@ function Gallery() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-  
+
   const handleImageLoad = () => {
     setLoading(false);
   };
 
-
   return (
-    <div className='max-w-[1240px] mt-10 mx-auto text-center'>
+    <div className='max-w-[1240px] mb-10 mt-10 mx-auto text-center'>
       <h1 className='text-6xl p-6 mb-10'>Gallery</h1>
       <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 justify-items-center'>
         {/* Loop over imageUrls array and generate Image components */}
         {imageUrls.map((url, index) => (
-          <div key={index} className="relative">
+          <div key={index} className="relative w-100 h-100"> {/* Set fixed width and height to make it square */}
             {loading && (
               <div className="absolute inset-0 flex items-center justify-center bg-black/50">
                 <ClipLoader color="#301e0e" loading={loading} size={50} />
@@ -151,7 +150,7 @@ function Gallery() {
               alt={`Picture ${index + 1}`} // Alt text with index for accessibility
               src={url}
               onLoad={handleImageLoad} // Hide loader once the image is loaded
-              className="object-cover"
+              className="object-cover w-full h-full"
             />
           </div>
         ))}
