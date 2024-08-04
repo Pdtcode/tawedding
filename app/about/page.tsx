@@ -8,8 +8,8 @@ export default function AboutPage() {
         <Image
           src='https://lh5.googleusercontent.com/d/1e_jNw9OukSfkcP17_0-SQWcyLgISO_uc'
           alt='Photographer'
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{objectFit:"cover"}}
           priority={true}
         />
       </div>

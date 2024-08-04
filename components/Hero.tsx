@@ -6,8 +6,8 @@ function Hero() {
     <div className="relative flex flex-col items-center justify-center h-full w-full">
          <Image
           src='/tabgvid.gif'
-          layout='fill'
-          objectFit='cover'
+          fill
+          style={{objectFit:"cover"}}
           alt='bg gif'
           unoptimized
         />
