@@ -1,62 +1,34 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Ta Wedding Service",
+  description: "We create memories with your life long partner for you to cherish for life.",
   navItems: [
     {
       label: "Home",
       href: "/",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "About",
+      href: "/about",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Contact",
+      href: "/contact",
     },
+  ],
+  navMenuItems: [
     {
-      label: "Blog",
-      href: "/blog",
+      label: "Home",
+      href: "/",
     },
     {
       label: "About",
       href: "/about",
     },
-  ],
-  navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
-    },
-    {
-      label: "Dashboard",
-      href: "/dashboard",
-    },
-    {
-      label: "Projects",
-      href: "/projects",
-    },
-    {
-      label: "Team",
-      href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
+      label: "Contact",
+      href: "/contact",
     },
   ],
   links: {

@@ -1,13 +1,30 @@
-export default function AboutLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+import Image from "next/image";
+
+export default function AboutPage() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-      <div className="inline-block max-w-lg text-center justify-center">
-        {children}
+    <div className="relative h-screen">
+      {/* Background Image */}
+      <div className="absolute inset-0 w-full h-full">
+        <Image
+          src='https://lh5.googleusercontent.com/d/1e_jNw9OukSfkcP17_0-SQWcyLgISO_uc'
+          alt='Photographer'
+          layout="fill"
+          objectFit="cover"
+        />
       </div>
-    </section>
+
+      {/* Semi-transparent overlay */}
+      <div className="absolute inset-0 bg-black/35"></div>
+
+      {/* Text content */}
+      <div className="relative flex items-center justify-center h-full">
+        <div className="bg-white p-6 max-w-lg text-center">
+          <h1 className="text-2xl mb-2">About Me</h1>
+          <p className="text-lg">
+            Hello, my name is Devin Ta, and I am a Vietnamese-American photographer based in Oklahoma City, Oklahoma. I enjoy taking portraits, creative photos, as well as wedding photos!
+          </p>
+        </div>
+      </div>
+    </div>
   );
 }
