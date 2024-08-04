@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Ta Wedding Service",
+  name: "Ta Wedding Services",
   description: "We create memories with your life long partner for you to cherish for life.",
   navItems: [
     {

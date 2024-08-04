@@ -43,7 +43,7 @@ export default function ContactPage() {
   return (
     <div>
       {/*overlay*/}
-      <div className="items-center justify-center bg-inherit bg-center bg-cover h-screen">
+      <div className="items-center justify-center bg-inherit bg-center bg-cover h-full">
         <div className="text-black">
           <h2 className="text-5xl font-bold">Contact</h2>
         </div>
