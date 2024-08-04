@@ -29,7 +29,7 @@ import {
 
 export const Navbar = () => {
   return (
-    <NextUINavbar maxWidth="xl" position="sticky" className="py-3 bg-[#301e0e]">
+    <NextUINavbar maxWidth="xl" position="sticky" className="py-1 bg-[#301e0e]">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
